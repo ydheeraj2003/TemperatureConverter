@@ -1,0 +1,109 @@
+
+
+body {
+  margin: 0;
+  min-height: 100vh; /* Ensures the body takes up at least the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("sun.webp");
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the entire background image is visible */
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+}
+
+h1{
+  color:#f88508;
+}
+
+.temp {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+button {
+ 
+  background-color: #f88508;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 80px;
+  text-align: center;
+  align-self: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffcb63;
+}
+
+select {
+  font-size: 1.2rem;
+}
+
+#result {
+  text-align: center;
+  color:#ff7300;
+  font-size: 1.5rem;
+  margin-top: 40px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  body {
+    background-size: cover; /* Ensures the background covers the screen on small devices */
+  }
+  
+  .temp {
+    margin-top: 0; /* Remove any top margin for better centering */
+  }
+  
+  #from, #to, button {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  button {
+    width: calc(100% - 40px);
+    padding: 12px;
+  }
+
+  #result {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  body {
+    background-size: cover; /* Ensures the background covers the screen on medium devices */
+  }
+
+  .temp {
+    margin-top: 0;
+  }
+
+  #from, #to {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  button {
+    margin-left: 40px;
+    width: auto;
+  }
+
+  #result {
+    font-size: 1.3rem;
+  }
+}
